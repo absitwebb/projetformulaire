@@ -1,0 +1,46 @@
+.body {
+  display: flex;
+  justify-content: center;
+}
+
+.corps {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 500px;
+  height: 70%;
+
+  background-color: #9ebb2b;
+}
+
+h1 {
+  color: rgb(3, 3, 3);
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nom {
+  width: 90%;
+  height: 40px;
+  border: 1px rgb(249, 249, 252) solid;
+  border-radius: 5px;
+  margin: auto;
+  background-color: #bad06c;
+  margin-bottom: 2px;
+}
+input {
+  display: block;
+  height: 20px;
+  margin: auto;
+  margin-left: 130px;
+  margin-top: -11px;
+
+  border: 1px rgb(249, 249, 252) solid;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+label {
+  font-weight: bold;
+  font-size: 17px;
+}

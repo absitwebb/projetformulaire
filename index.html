@@ -7,28 +7,76 @@
     <link rel="stylesheet" href="styleformulaire.css" />
     <title>projet formulaire</title>
   </head>
-  <body class="corps">
-    <!------------------------ debut header ----------------->
-    <header>
-      <div class="container1"></div>
-      <div class="container2"></div>
-      <div class="container3"></div>
-    </header>
-    <!------------------------ debut header ----------------->
+  <body class="body">
+    <div class="corps">
+      <!------------------------ debut header ----------------->
+      <header>
+        <h1>Step 1 votre identité</h1>
+        <!------------------------ debut formulaire nom ----------------->
+        <form method="post" action="traitement.php">
+          <!------------------------block nom ----------------->
+          <div class="nom">
+            <label for="pseudo">Nom</label>
+            <input
+              type="text"
+              name="pseudo"
+              id="pseudo"
+              placeholder="Prenom et nom"
+              size="30"
+              maxlength="30"
+            />
+          </div>
+          <div class="nom">
+            <label for="pseudo">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              size="30"
+              maxlength="30"
+            />
+          </div>
+          <div class="nom">
+            <label for="pseudo">Téléphone</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Téléphone"
+              size="30"
+              maxlength="30"
+            />
+          </div>
 
-    <!------------------------ debut section1 ----------------->
-    <section class="section1">
-      <div class="container1"></div>
-      <div class="container2"></div>
-      <div class="container3"></div>
-    </section>
-    <!------------------------ fin section1 ----------------->
-    <!------------------------ debut section2 ----------------->
-    <section class="section2">
-      <div class="container1"></div>
-      <div class="container2"></div>
-      <div class="container3"></div>
-    </section>
-    <!------------------------ fin section2 ----------------->
+           <!------------------------ fin block nom----------------->
+              
+      </header>
+      <!------------------------ debut header ----------------->
+
+      <!------------------------ debut section1 ----------------->
+      <section class="section">
+        <h1>Step 2 Adresse de livraison</h1>
+        
+        <div class="nom">
+          <label for="pseudo">Adresse</label>
+           <textarea name="ameliorer" id="ameliorer"></textarea>
+        </div>
+        
+        <div class="container2"></div>
+        <div class="container3"></div>
+      </section>
+      <!------------------------ fin section1 ----------------->
+      <!------------------------ debut section2 ----------------->
+      <section class="section2">
+        <h1>informationc CB</h1>
+        <div class="container1"></div>
+        <div class="container2"></div>
+        <div class="container3"></div>
+      </section>
+      <!------------------------ fin section2 ----------------->
+      </form>
+      <!------------------------ fin formulaire nom ----------------->
+    </div>
   </body>
 </html>
