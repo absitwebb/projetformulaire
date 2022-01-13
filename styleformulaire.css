@@ -8,7 +8,7 @@
   flex-direction: column;
   border-radius: 10px;
   width: 500px;
-  height: 70%;
+  height: 80%;
 
   background-color: #9ebb2b;
 }
@@ -22,6 +22,16 @@ h1 {
 .nom {
   width: 90%;
   height: 40px;
+  border: 1px rgb(249, 249, 252) solid;
+  border-radius: 5px;
+  margin: auto;
+  background-color: #bad06c;
+  margin-bottom: 2px;
+}
+
+.adresse {
+  width: 90%;
+  height: 120px;
   border: 1px rgb(249, 249, 252) solid;
   border-radius: 5px;
   margin: auto;
@@ -43,4 +53,42 @@ input {
 label {
   font-weight: bold;
   font-size: 17px;
+}
+textarea {
+  display: block;
+  width: 231px;
+  height: 95px;
+  margin: auto;
+  margin-left: 130px;
+  margin-top: -11px;
+  border: 1px rgb(249, 249, 252) solid;
+  border-radius: 5px;
+}
+
+.infocb {
+  width: 90%;
+  margin: auto;
+  height: 75px;
+  border: 1px rgb(249, 249, 252) solid;
+  border-radius: 5px;
+  background-color: #bad06c;
+  margin-bottom: 2px;
+}
+
+.infocb h2 {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.infocb_input {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+  margin: 10px;
+}
+
+.infocb_input label {
+  position: relative;
+  left: 10px;
+  top: -8px;
 }
