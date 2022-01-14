@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styleformulaire.css" />
+    
+
     <title>projet formulaire</title>
   </head>
   <body class="body">
@@ -14,7 +16,7 @@
         <h1>Step 1 votre identité</h1>
         <!------------------------ debut formulaire nom ----------------->
         <form method="post" action="traitement.php">
-          <!------------------------block nom ----------------->
+          <!------------------------debut 1er block ----------------->
           <div class="nom">
             <label for="pseudo">Nom</label>
             <input
@@ -49,12 +51,12 @@
             />
           </div>
 
-           <!------------------------ fin block nom----------------->
+           <!------------------------ fin 1er block----------------->
               
       </header>
-      <!------------------------ debut header ----------------->
+      <!------------------------ fin header ----------------->
 
-      <!------------------------ debut section1 ----------------->
+      <!------------------------ debut 2éme block ----------------->
       <section >
         <h1>Step 2 Adresse de livraison</h1>
         
@@ -88,24 +90,72 @@
         
        
       </section>
-      <!------------------------ fin section1 ----------------->
-      <!------------------------ debut section2 ----------------->
+      <!------------------------ fin 2éme block ----------------->
+      
+      <!------------------------ debut 3ème block ----------------->
       <section  >
-        <h1>informationc CB</h1>
+        <h1>Step 3 informationc CB</h1>
+        <!------------------------ debut block cartes bancaires -----------------> 
         <div class="infocb">
-          <h2>Type carte bancaire</h2>
-       <div class="infocb_input">
-        <input type="checkbox" name="visa" id="visa" /> <label for="visa">visa</label>
-       <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label>
-       <input type="checkbox" name="epinards" id="epinards" /> <label for="epinards">Epinards</label>
+         
+            <h2>Type carte bancaire</h2>
+      
+            <div class="infocb_input">
+       
+         <input type="radio" name="cartesb" id="visa" /> 
+        <img src="images/visa.png" alt="carte visa" /> 
+        <label for="visa">Visa</label>
+       <input type="radio" name="cartesb" id="amex" />
+       <img src="images/amex.png" alt="carte visa" /> 
+        <label for="amex">AmEX</label>
+       <input type="radio" name="cartesb" id="mastecard" />
+       <img src="images/mastercarte.png" alt="carte visa" /> 
+        <label for="mastecard">Mastecard</label>
        </div>
         </div>
-        <div class="container2"></div>
-        <div class="container3"></div>
+
+        <!------------------------ fin block cartes bancaires ----------------->
+        <div class="nom">
+           <label for="pseudo">No de carte</label>
+            <input
+              type="text"
+              name="nocarte"
+              id="nocarte"
+               size="30"
+              maxlength="30"
+            />
+        </div>
+        <div class="nom">
+           <label for="pseudo">Code de sécurité</label>
+            <input
+              type="text"
+              name="codes"
+              id="codes"
+               size="30"
+              maxlength="30"
+            />
+        </div>
+        <div class="nom">
+         <label for="pseudo">Nom du porteur </label>
+            <input
+              type="text"
+              name="nporteur"
+              id="nporteur"
+               size="30"
+              maxlength="30"
+            />
+      </div>
       </section>
+      <!------------------------ fin 3ème block ----------------->
+   <!------------------------ bouton envoie ----------------->   
+      <footer class="btn">
+<input type="submit" value="J'ACHETE!" />
+      
       <!------------------------ fin section2 ----------------->
       </form>
+       </footer>
       <!------------------------ fin formulaire nom ----------------->
+     
     </div>
   </body>
 </html>

@@ -14,9 +14,12 @@
 }
 
 h1 {
+  position: relative;
   color: rgb(3, 3, 3);
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Times New Roman", Times, serif;
+  left: 10px;
+  opacity: 0.7;
 }
 
 .nom {
@@ -51,8 +54,10 @@ input {
 }
 
 label {
-  font-weight: bold;
   font-size: 17px;
+  position: relative;
+  top: 10px;
+  left: 5px;
 }
 textarea {
   display: block;
@@ -78,17 +83,44 @@ textarea {
 .infocb h2 {
   font-size: 18px;
   margin-top: 2px;
+  opacity: 0.7;
 }
 
-.infocb_input {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 5px;
-  margin: 10px;
+.infocb_input input {
+  display: inline-block;
+
+  margin: auto;
+  margin-left: 35px;
 }
 
 .infocb_input label {
   position: relative;
-  left: 10px;
-  top: -8px;
+  left: 5px;
+  top: -6px;
+}
+
+.infocb_input img {
+  position: relative;
+  bottom: 3px;
+}
+.btn {
+  width: 163px;
+  height: 40px;
+  border: 1px #374313 solid;
+  border-radius: 30px;
+  margin: auto;
+  background-color: #374313;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+.btn input {
+  position: relative;
+  right: 105px;
+  top: 19px;
+  color: rgb(249, 250, 250);
+  background-color: #374313;
+  border: #374313;
+  font-size: 20px;
+  font-style: normal;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
